@@ -1,0 +1,88 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 4,
+        "name": "Search Google with your name",
+        "description": "",
+        "id": "test-google-search;search-google-with-your-name",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 7164244820,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I open Google.com",
+            "match": {
+              "location": "FirstTest.method1()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 203439247,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I type name in Search box",
+            "match": {
+              "location": "FirstTest.i_type_name_in_Search_box()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1101330852,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I click on search",
+            "match": {
+              "location": "FirstTest.i_click_on_search()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 122511270,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I should see matching search results",
+            "match": {
+              "location": "FirstTest.i_should_see_matching_search_results()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3335419778,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I close the browser",
+            "match": {
+              "location": "FirstTest.i_close_the_browser()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@google"
+          }
+        ]
+      }
+    ],
+    "name": "Test Google Search",
+    "description": "",
+    "id": "test-google-search",
+    "keyword": "Feature",
+    "uri": "MyTest.feature"
+  }
+]

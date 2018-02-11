@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: Scenario: Search Google with your name
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 12.147 sec - in Scenario: Search Google with your name
