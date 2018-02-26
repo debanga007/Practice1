@@ -21,7 +21,7 @@ public class FirstTest
 	@Given("^I open Google.com$")
 	public void method1()
 	{
-		System.setProperty("webdriver.chrome.driver","C://workspace//CucumberMavenProject//CucumberSF//drivers//chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver","G://Old Java Projects//LocalGit//PracticeProject//drivers//chromedriver.exe");
 		driver=new ChromeDriver();
 		driver.get("https://www.google.co.in/?gfe_rd=cr&dcr=0&ei=V5x-WrnCO4-GX6bWv6AG");
 		driver.manage().window().maximize();
