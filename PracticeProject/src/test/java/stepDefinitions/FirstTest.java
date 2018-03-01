@@ -19,7 +19,7 @@ public class FirstTest
 	WebDriver driver;
 
 	@Given("^I open Google.com$")
-	public void method1()
+	public void mymethod1()
 	{
 		System.setProperty("webdriver.chrome.driver","G://Old Java Projects//LocalGit//PracticeProject//drivers//chromedriver.exe");
 		driver=new ChromeDriver();
