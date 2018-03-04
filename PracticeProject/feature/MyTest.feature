@@ -1,6 +1,5 @@
 Feature: Test Google Search
 
-<<<<<<< HEAD
   @success	@regression
   Scenario: Scenario One Search Google with your name
     Given I open Google.com
