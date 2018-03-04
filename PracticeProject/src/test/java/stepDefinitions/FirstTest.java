@@ -8,6 +8,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
+
 import org.testng.asserts.SoftAssert;
 
 import cucumber.api.java.en.Given;
@@ -21,7 +22,7 @@ public class FirstTest
 	SoftAssert sassert=new SoftAssert();
 
 	@Given("^I open Google.com$")
-	public void method1()
+	public void mymethod1()
 	{
 		//System.setProperty("webdriver.chrome.driver","G://Old Java Projects//LocalGit//PracticeProject//drivers//chromedriver.exe");
 		System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"//drivers//chromedriver.exe");

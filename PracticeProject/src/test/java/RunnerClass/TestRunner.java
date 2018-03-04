@@ -10,6 +10,7 @@ import cucumber.api.junit.Cucumber;
 					,glue={"stepDefinitions"}
 					,plugin={"pretty","html:target/htmlreport","json:target/jsonreport/cuc1.json","junit:target/xmlreport/cuc2.xml"}
 					,tags={"@regression"})
+
 public class TestRunner 
 {
 
