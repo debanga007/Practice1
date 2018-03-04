@@ -9,7 +9,7 @@ import cucumber.api.junit.Cucumber;
 @CucumberOptions(features="feature"
 					,glue={"stepDefinitions"}
 					,plugin={"pretty","html:target/htmlreport","json:target/jsonreport/cuc1.json","junit:target/xmlreport/cuc2.xml"}
-					,tags={"@google"})
+					,tags={"@regression"})
 public class TestRunner 
 {
 
