@@ -4,6 +4,8 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -11,6 +13,11 @@ import org.testng.Assert;
 
 import org.testng.asserts.SoftAssert;
 
+import com.cucumber.listener.Reporter;
+
+import cucumber.api.Scenario;
+import cucumber.api.java.After;
+import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -20,6 +27,25 @@ public class FirstTest
 	
 	WebDriver driver;
 	SoftAssert sassert=new SoftAssert();
+	Scenario scenario;
+	
+
+	@Before
+	public void setup(Scenario scenario)
+	{
+		this.scenario=scenario;
+		System.out.println("Starting execution.." +scenario.getName());
+	}
+
+	@After
+	public void afterScenario(Scenario scenario)
+	{
+		if(scenario.isFailed())
+		{
+			//String screenshotName=scenario.getName().replaceAll(" ", "_");
+			scenario.embed( ((TakesScreenshot)driver).getScreenshotAs(OutputType.BYTES), "image/png");
+		}
+	}
 
 	@Given("^I open Google.com$")
 	public void mymethod1()
